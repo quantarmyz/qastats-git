@@ -90,6 +90,7 @@ def create_return_dd(data=None,live_start_date=None,dark=False,name=None):
 
     if name is None :
         fig.savefig('noname.pdf', bbox_inches='tight', pad_inches=0.1)
+        fig.savefig('noname.png', bbox_inches='tight', pad_inches=0.1)
     else:
         fig.savefig(str(name)+'.pdf', bbox_inches='tight', pad_inches=0.1)
     qa_plot(fig)
